@@ -1,0 +1,160 @@
+\hypertarget{class_agent_logger_1_1_lime_logger}{}\doxysection{Agent\+Logger.\+Lime\+Logger Class Reference}
+\label{class_agent_logger_1_1_lime_logger}\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a08853493565f62909a8e0f5192a0ee3f}\label{class_agent_logger_1_1_lime_logger_a08853493565f62909a8e0f5192a0ee3f}} 
+static short {\bfseries Get\+Key\+State} (int key\+Code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_af7844e5d070cb2888e2a203a4300abca}{Start}} ()
+\item 
+static void \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a3c86011fe53d7006a02010506f94c3df}{Stop}} ()
+\item 
+static void \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_aa215f808a7d017e9c4f14b082934ae96}{Clear\+File\+Buffer}} ()
+\item 
+static void \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a4783fb1e081729c0fb8f02353a15b2ea}{Store\+Buffer}} ()
+\item 
+static string \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a39b416b3d801ca38d68be7f351b5cbf6}{Get\+File\+Buffer\+Str}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a51c2382146f8489c438052da95e7d5a8}\label{class_agent_logger_1_1_lime_logger_a51c2382146f8489c438052da95e7d5a8}} 
+static string {\bfseries buffer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a660562c93c4f0f11209951025766fd1b}\label{class_agent_logger_1_1_lime_logger_a660562c93c4f0f11209951025766fd1b}} 
+static Int\+Ptr {\bfseries Set\+Windows\+Hook\+Ex} (int id\+Hook, Low\+Level\+Keyboard\+Proc lpfn, Int\+Ptr h\+Mod, uint dw\+Thread\+Id)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aea9fd6ce26441b51ad00cce1dfed915f}\label{class_agent_logger_1_1_lime_logger_aea9fd6ce26441b51ad00cce1dfed915f}} 
+static bool {\bfseries Unhook\+Windows\+Hook\+Ex} (Int\+Ptr hhk)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_ab487c7d899f40124ea758de9c304b02b}\label{class_agent_logger_1_1_lime_logger_ab487c7d899f40124ea758de9c304b02b}} 
+static Int\+Ptr {\bfseries Call\+Next\+Hook\+Ex} (Int\+Ptr hhk, int n\+Code, Int\+Ptr w\+Param, Int\+Ptr l\+Param)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aa20f814e1b42bd13a06f6ff2466ae0a1}\label{class_agent_logger_1_1_lime_logger_aa20f814e1b42bd13a06f6ff2466ae0a1}} 
+static Int\+Ptr {\bfseries Get\+Module\+Handle} (string lp\+Module\+Name)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a8890f5a779ae39e5308e7f3eb92f3b4e}\label{class_agent_logger_1_1_lime_logger_a8890f5a779ae39e5308e7f3eb92f3b4e}} 
+delegate Int\+Ptr {\bfseries Low\+Level\+Keyboard\+Proc} (int n\+Code, Int\+Ptr w\+Param, Int\+Ptr l\+Param)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a0dae35de7936e8fe2f42fdc4636fb1f0}\label{class_agent_logger_1_1_lime_logger_a0dae35de7936e8fe2f42fdc4636fb1f0}} 
+static Int\+Ptr {\bfseries Get\+Foreground\+Window} ()
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aa0be807b649cd7bc17018eedc6cb9fad}\label{class_agent_logger_1_1_lime_logger_aa0be807b649cd7bc17018eedc6cb9fad}} 
+static uint {\bfseries Get\+Window\+Thread\+Process\+Id} (Int\+Ptr h\+Wnd, out uint lpdw\+Process\+Id)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a6b58468f3354e583218e383c57d2c6f8}\label{class_agent_logger_1_1_lime_logger_a6b58468f3354e583218e383c57d2c6f8}} 
+static bool {\bfseries Get\+Keyboard\+State} (byte\mbox{[}$\,$\mbox{]} lp\+Key\+State)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_acc0ce7666f4754333900872c64553040}\label{class_agent_logger_1_1_lime_logger_acc0ce7666f4754333900872c64553040}} 
+static Int\+Ptr {\bfseries Get\+Keyboard\+Layout} (uint id\+Thread)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aab925915e36c8a37827ff5f0cbc80d83}\label{class_agent_logger_1_1_lime_logger_aab925915e36c8a37827ff5f0cbc80d83}} 
+static int {\bfseries To\+Unicode\+Ex} (uint w\+Virt\+Key, uint w\+Scan\+Code, byte\mbox{[}$\,$\mbox{]} lp\+Key\+State, \mbox{[}Out, Marshal\+As(Unmanaged\+Type.\+L\+P\+W\+Str)\mbox{]} String\+Builder pwsz\+Buff, int cch\+Buff, uint w\+Flags, Int\+Ptr dwhkl)
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_ad039660afca8bbc2ca1292e06d3ac921}\label{class_agent_logger_1_1_lime_logger_ad039660afca8bbc2ca1292e06d3ac921}} 
+static uint {\bfseries Map\+Virtual\+Key} (uint u\+Code, uint u\+Map\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Int\+Ptr \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a9343d9fce76d045bcd89d2e48dbb8410}{Set\+Hook}} (Low\+Level\+Keyboard\+Proc proc)
+\item 
+static Int\+Ptr \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a653e20711cf7be9eedc83f667473847c}{Hook\+Callback}} (int n\+Code, Int\+Ptr w\+Param, Int\+Ptr l\+Param)
+\item 
+static string \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_ae1d5faacd298ae3532aa4e13f9f893fb}{Keyboard\+Layout}} (uint vk\+Code)
+\item 
+static string \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a0d9d298cad03d64e113e87b80cca0643}{Get\+Active\+Window\+Title}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aab8ece1ac46d2dacc5692d3f1ccb6e64}\label{class_agent_logger_1_1_lime_logger_aab8ece1ac46d2dacc5692d3f1ccb6e64}} 
+static readonly string {\bfseries logger\+Path} = Environment.\+Get\+Folder\+Path(Environment.\+Special\+Folder.\+My\+Documents) + @\char`\"{}\textbackslash{}Purplecomet\char`\"{}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a7852f04e922c3ea85e2cb92da2967b6b}\label{class_agent_logger_1_1_lime_logger_a7852f04e922c3ea85e2cb92da2967b6b}} 
+static string {\bfseries Current\+Active\+Window\+Title}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a22a2bf9db017ee53b0e22bac276b1535}\label{class_agent_logger_1_1_lime_logger_a22a2bf9db017ee53b0e22bac276b1535}} 
+const int {\bfseries W\+M\+\_\+\+K\+E\+Y\+D\+O\+WN} = 0x0100
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a19fbd378b8482ce49f28ff42b36e0565}\label{class_agent_logger_1_1_lime_logger_a19fbd378b8482ce49f28ff42b36e0565}} 
+static Low\+Level\+Keyboard\+Proc {\bfseries \+\_\+proc} = \mbox{\hyperlink{class_agent_logger_1_1_lime_logger_a653e20711cf7be9eedc83f667473847c}{Hook\+Callback}}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a0844cc84e646a5c1acc217e4b52aeb52}\label{class_agent_logger_1_1_lime_logger_a0844cc84e646a5c1acc217e4b52aeb52}} 
+static Int\+Ptr {\bfseries \+\_\+hook\+ID} = Int\+Ptr.\+Zero
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a71cc1b705be750367ab9f4e0de3fc770}\label{class_agent_logger_1_1_lime_logger_a71cc1b705be750367ab9f4e0de3fc770}} 
+static int {\bfseries W\+H\+K\+E\+Y\+B\+O\+A\+R\+D\+LL} = 13
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilidad externa escrita por N\+Y\+AN C\+AT (\href{https://github.com/NYAN-x-CAT}{\texttt{ https\+://github.\+com/\+N\+Y\+A\+N-\/x-\/\+C\+AT}}). Se encarga de las operaciones relacionadas al registro de teclas del sistema. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_aa215f808a7d017e9c4f14b082934ae96}\label{class_agent_logger_1_1_lime_logger_aa215f808a7d017e9c4f14b082934ae96}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!ClearFileBuffer@{ClearFileBuffer}}
+\index{ClearFileBuffer@{ClearFileBuffer}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{ClearFileBuffer()}{ClearFileBuffer()}}
+{\footnotesize\ttfamily static void Agent\+Logger.\+Lime\+Logger.\+Clear\+File\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elimina la informacion temporal almacenada en el sistema. Esto solo se debe realizar cuando se recibe confirmacion del servidor de que la subida de datos fue exitosa. \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a0d9d298cad03d64e113e87b80cca0643}\label{class_agent_logger_1_1_lime_logger_a0d9d298cad03d64e113e87b80cca0643}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!GetActiveWindowTitle@{GetActiveWindowTitle}}
+\index{GetActiveWindowTitle@{GetActiveWindowTitle}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{GetActiveWindowTitle()}{GetActiveWindowTitle()}}
+{\footnotesize\ttfamily static string Agent\+Logger.\+Lime\+Logger.\+Get\+Active\+Window\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Obtiene informacion acerca de la ventana en la que se encuentra el usuario \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a39b416b3d801ca38d68be7f351b5cbf6}\label{class_agent_logger_1_1_lime_logger_a39b416b3d801ca38d68be7f351b5cbf6}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!GetFileBufferStr@{GetFileBufferStr}}
+\index{GetFileBufferStr@{GetFileBufferStr}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{GetFileBufferStr()}{GetFileBufferStr()}}
+{\footnotesize\ttfamily static string Agent\+Logger.\+Lime\+Logger.\+Get\+File\+Buffer\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Devuelve el contenido del archivo de buffer temporal \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a653e20711cf7be9eedc83f667473847c}\label{class_agent_logger_1_1_lime_logger_a653e20711cf7be9eedc83f667473847c}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!HookCallback@{HookCallback}}
+\index{HookCallback@{HookCallback}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{HookCallback()}{HookCallback()}}
+{\footnotesize\ttfamily static Int\+Ptr Agent\+Logger.\+Lime\+Logger.\+Hook\+Callback (\begin{DoxyParamCaption}\item[{int}]{n\+Code,  }\item[{Int\+Ptr}]{w\+Param,  }\item[{Int\+Ptr}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Procesamiento de una pulsacion proveniente del sistema, como un evento. \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_ae1d5faacd298ae3532aa4e13f9f893fb}\label{class_agent_logger_1_1_lime_logger_ae1d5faacd298ae3532aa4e13f9f893fb}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!KeyboardLayout@{KeyboardLayout}}
+\index{KeyboardLayout@{KeyboardLayout}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{KeyboardLayout()}{KeyboardLayout()}}
+{\footnotesize\ttfamily static string Agent\+Logger.\+Lime\+Logger.\+Keyboard\+Layout (\begin{DoxyParamCaption}\item[{uint}]{vk\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Detecta el teclado del sistema \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a9343d9fce76d045bcd89d2e48dbb8410}\label{class_agent_logger_1_1_lime_logger_a9343d9fce76d045bcd89d2e48dbb8410}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!SetHook@{SetHook}}
+\index{SetHook@{SetHook}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{SetHook()}{SetHook()}}
+{\footnotesize\ttfamily static Int\+Ptr Agent\+Logger.\+Lime\+Logger.\+Set\+Hook (\begin{DoxyParamCaption}\item[{Low\+Level\+Keyboard\+Proc}]{proc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Conexion con el sistema logico de registro de pulsaciones del sistema \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_af7844e5d070cb2888e2a203a4300abca}\label{class_agent_logger_1_1_lime_logger_af7844e5d070cb2888e2a203a4300abca}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!Start@{Start}}
+\index{Start@{Start}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily static void Agent\+Logger.\+Lime\+Logger.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Inicia el registro de datos dentro del sistema \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a3c86011fe53d7006a02010506f94c3df}\label{class_agent_logger_1_1_lime_logger_a3c86011fe53d7006a02010506f94c3df}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!Stop@{Stop}}
+\index{Stop@{Stop}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily static void Agent\+Logger.\+Lime\+Logger.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Detiene el registro de datos del sistema \mbox{\Hypertarget{class_agent_logger_1_1_lime_logger_a4783fb1e081729c0fb8f02353a15b2ea}\label{class_agent_logger_1_1_lime_logger_a4783fb1e081729c0fb8f02353a15b2ea}} 
+\index{AgentLogger.LimeLogger@{AgentLogger.LimeLogger}!StoreBuffer@{StoreBuffer}}
+\index{StoreBuffer@{StoreBuffer}!AgentLogger.LimeLogger@{AgentLogger.LimeLogger}}
+\doxysubsubsection{\texorpdfstring{StoreBuffer()}{StoreBuffer()}}
+{\footnotesize\ttfamily static void Agent\+Logger.\+Lime\+Logger.\+Store\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Almacena el buffer temporal del programa en un archivo a modo de respaldo 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Agent\+Logger/\+Agent\+Logger/utils/Lime\+Logger.\+cs\end{DoxyCompactItemize}

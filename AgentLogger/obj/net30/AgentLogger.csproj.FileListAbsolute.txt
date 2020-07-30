@@ -1,0 +1,6 @@
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.csprojAssemblyReference.cache
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.LoggerAgent.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.LoginAgent.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.Properties.Resources.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.csproj.GenerateResource.cache
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\net30\AgentLogger.csproj.CoreCompileInputs.cache

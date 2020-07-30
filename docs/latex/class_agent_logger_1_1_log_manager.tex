@@ -1,0 +1,30 @@
+\hypertarget{class_agent_logger_1_1_log_manager}{}\doxysection{Agent\+Logger.\+Log\+Manager Class Reference}
+\label{class_agent_logger_1_1_log_manager}\index{AgentLogger.LogManager@{AgentLogger.LogManager}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async static void \mbox{\hyperlink{class_agent_logger_1_1_log_manager_a67af72e436ad2744761c5e8d569368ea}{Send\+Log}} (\mbox{\hyperlink{class_agent_logger_1_1_agent}{Agent}} agent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_logger_1_1_log_manager_aa35aa7ca22be18dd837733541f3aec43}\label{class_agent_logger_1_1_log_manager_aa35aa7ca22be18dd837733541f3aec43}} 
+static readonly Http\+Client {\bfseries client} = new Http\+Client()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada del envio y gestion interna de los registros del usuario. Desde aqui se limpian los buffers en base a las respuestas del servidor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent_logger_1_1_log_manager_a67af72e436ad2744761c5e8d569368ea}\label{class_agent_logger_1_1_log_manager_a67af72e436ad2744761c5e8d569368ea}} 
+\index{AgentLogger.LogManager@{AgentLogger.LogManager}!SendLog@{SendLog}}
+\index{SendLog@{SendLog}!AgentLogger.LogManager@{AgentLogger.LogManager}}
+\doxysubsubsection{\texorpdfstring{SendLog()}{SendLog()}}
+{\footnotesize\ttfamily async static void Agent\+Logger.\+Log\+Manager.\+Send\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent_logger_1_1_agent}{Agent}}}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Envia el registro al servidor y en caso exitoso limpiara los buffer temporales. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Agent\+Logger/\+Agent\+Logger/utils/Log\+Manager.\+cs\end{DoxyCompactItemize}

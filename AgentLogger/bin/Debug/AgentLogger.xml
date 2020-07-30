@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AgentLogger</name>
+    </assembly>
+    <members>
+        <member name="T:AgentLogger.Agent">
+            Clase encargada de la transferencia de informacion de usuario.
+            Utiliza una propiedad dinamica que recibe un json desde la pagina web y la utiliza para obtener la informacion del usuario
+        </member>
+        <member name="T:AgentLogger.LoggerAgent">
+            Esta clase maneja el registro de datos del usuario por medio de la interfaz.
+            Se encarga de configurar la interfaz en base a los datos del usuario y tambien de dar señales de inicio y termino al registro de datos.
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.SetupGUI">
+            Configura la interfaz grafica
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.SetupMenuBar">
+            Configura los elementos de la barra de navegacion segun configuracion del sistema
+            
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.SetupScheduleTable">
+            Rellena la tabla con los datos obtenidos desde el servidor
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.ToggleLogger">
+            Envia la señal de inicio y termino del registro de datos. Tambien cambia dicho estado en la interfaz
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.OnTimedSend(System.Object,System.Timers.ElapsedEventArgs)">
+            Evento de envio de datos
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.Quit">
+            Operaciones a realizar al momento de cerrar la aplicacion: enviar datos, guardar configuraciones, y salir. 
+        </member>
+        <member name="F:AgentLogger.LoggerAgent.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AgentLogger.LoggerAgent.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AgentLogger.LoginAgent">
+            Clase encargada del inicio de sesion en el sistema.
+        </member>
+        <member name="M:AgentLogger.LoginAgent.OnStartup">
+            Funciones de configuracion inicial del sistema, tales como hooks, cargado de configuraciones, y operaciones automaticas.
+        </member>
+        <member name="M:AgentLogger.LoginAgent.SendCredentials">
+            Proceso de envio de credenciales al servidor. 
+            Recibe una respuesta del servidor y lanza avisos MessageBox en base a esta.
+        </member>
+        <member name="F:AgentLogger.LoginAgent.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AgentLogger.LoginAgent.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AgentLogger.LoginAgent.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AgentLogger.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:AgentLogger.Persistence">
+            Esta clase representa las configuraciones del programa. Se utiliza para acceder y modificar las configuraciones y preferencias.
+        </member>
+        <member name="M:AgentLogger.Persistence.Load">
+            Intenta obtener la configuracion del usuario en base a un archivo de configuracion json. 
+            Si el archivo no existe, lo creara con parametros por defecto.
+        </member>
+        <member name="M:AgentLogger.Persistence.Save">
+            Guarda las configuraciones en un archivo 
+        </member>
+        <member name="T:AgentLogger.LogManager">
+            Clase encargada del envio y gestion interna de los registros del usuario.
+            Desde aqui se limpian los buffers en base a las respuestas del servidor.
+        </member>
+        <member name="M:AgentLogger.LogManager.SendLog(AgentLogger.Agent)">
+            Envia el registro al servidor y en caso exitoso limpiara los buffer temporales.
+        </member>
+        <member name="T:AgentLogger.LimeLogger">
+            Utilidad externa escrita por NYAN CAT (https://github.com/NYAN-x-CAT). 
+            Se encarga de las operaciones relacionadas al registro de teclas del sistema.
+        </member>
+        <member name="M:AgentLogger.LimeLogger.Start">
+            Inicia el registro de datos dentro del sistema
+        </member>
+        <member name="M:AgentLogger.LimeLogger.Stop">
+            Detiene el registro de datos del sistema
+        </member>
+        <member name="M:AgentLogger.LimeLogger.SetHook(AgentLogger.LimeLogger.LowLevelKeyboardProc)">
+            Conexion con el sistema logico de registro de pulsaciones del sistema
+        </member>
+        <member name="M:AgentLogger.LimeLogger.HookCallback(System.Int32,System.IntPtr,System.IntPtr)">
+            Procesamiento de una pulsacion proveniente del sistema, como un evento.
+        </member>
+        <member name="M:AgentLogger.LimeLogger.KeyboardLayout(System.UInt32)">
+            Detecta el teclado del sistema
+        </member>
+        <member name="M:AgentLogger.LimeLogger.ClearFileBuffer">
+            Elimina la informacion temporal almacenada en el sistema.
+            Esto solo se debe realizar cuando se recibe confirmacion del servidor de que la subida de datos fue exitosa.
+        </member>
+        <member name="M:AgentLogger.LimeLogger.StoreBuffer">
+            Almacena el buffer temporal del programa en un archivo a modo de respaldo
+        </member>
+        <member name="M:AgentLogger.LimeLogger.GetFileBufferStr">
+            Devuelve el contenido del archivo de buffer temporal
+        </member>
+        <member name="M:AgentLogger.LimeLogger.GetActiveWindowTitle">
+            Obtiene informacion acerca de la ventana en la que se encuentra el usuario
+        </member>
+        <member name="T:AgentLogger.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AgentLogger.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AgentLogger.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\AgentLogger.exe.config
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\AgentLogger.exe.manifest
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\AgentLogger.application
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\AgentLogger.exe
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\AgentLogger.pdb
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\Newtonsoft.Json.dll
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\bin\Release\Newtonsoft.Json.xml
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.csprojAssemblyReference.cache
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.LoggerAgent.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.LoginAgent.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.Properties.Resources.resources
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.csproj.GenerateResource.cache
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.exe.manifest
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.application
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.csproj.CopyComplete
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.exe
+C:\Users\Ita\source\repos\AgentLogger\AgentLogger\obj\Release\AgentLogger.pdb
